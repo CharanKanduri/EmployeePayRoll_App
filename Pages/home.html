@@ -26,12 +26,12 @@
                 <div class="Form-Heading">Employee Payroll Form</div>
                 <!--UC-2 Name-->
                 <div class="row-attributes">
-                    <label class="label-text" for="name" >NAME</label>
+                    <label class="label text" for="name" >Name</label>
                     <input class="input" type="text" id="name" name="name" placeholder="Your Name" required> 
                      <!--UC-3 Profile Picture--> 
                 </div>
                 <div class="row-attributes">
-                    <label class="label text">PROFILE PICTURE</label>
+                    <label class="label text">Profile</label>
                     <div class="profile-radio-content">
                         <label>
                             <input type="radio" id="profile1" name="profile" value="../assets/profile-images/Ellipse-7.png" required>
@@ -51,8 +51,41 @@
                         </label>
                     </div>
                 </div>
-            
-               
+                <!--UC4 Adding Gender(Radio button) Department (Checkbox) Salary(Range)-->
+                <div class="row-attributes">
+                    <label for="gender" class="label text" >Gender</label>
+                    <div>
+                        <label for="male" class="text">Male</label>
+                        <input type="radio" id="male" name="Male" value="Male">
+
+                        <label for="female" class="text">Female</label>
+                        <input type="radio" id="Female" name="Female" value="Female">
+                     </div>
+                </div>
+                <div class="row-attributes">
+                    <label for="department" class="label text" >Department</label>
+                    <div>
+                        <label for="hr" class="text">HR</label>
+                        <input type="checkbox" id="hr" name="hr" value="hr">
+
+                        <label for="Sales" class="text">Sales</label>
+                        <input type="checkbox" id="sales" name="sales" value="sales">
+
+                        <label for="finance" class="text">Finance</label>
+                        <input type="checkbox" id="finance" name="finance" value="finance">
+
+                        <label for="Engineer" class="text">Engineer</label>
+                        <input type="checkbox" id="engineer" name="engineer" value="engineer">
+
+                        <label for="Others" class="text">Others</label>
+                        <input type="checkbox" id="others" name="others" value="others">
+                     </div>
+                </div>
+               <div class="row-attributes" >
+                   <label for="Salary">Salary</label>
+                   <input type="range" name="Salary" id="Salary" min="30000" max="50000" step="100" value="40000">
+                   <output class="salary-output text" for="Salary">40000</output>
+               </div>
                 
             </form>
         </div>
