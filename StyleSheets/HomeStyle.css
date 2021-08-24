@@ -1,0 +1,34 @@
+.Header-content
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+.Header-text
+{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-left: 1%;
+
+}
+.Header-text span:nth-child(2)
+{
+    color: #42515F;
+}
+.Header-text span:nth-child(1)
+{
+    color: #82A70C;
+}
+.Header
+{
+    width: 100%;
+    background: #c7c6c6 0% 0% no-repeat padding-box;
+}
+body
+{
+    background: #ffffff 0% 0% no-repeat padding-box;
+}
